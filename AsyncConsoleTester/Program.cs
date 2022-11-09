@@ -1,14 +1,14 @@
 ﻿internal class Program
 {
-    private static async Task Main(string[] args)
-    {
-        //One();
-        //Two();
-        //Three();
-        //await Three();
-        //await Four();
-        //await Five();
-    }
+private static async Task Main(string[] args)
+{
+    //One();
+    //Two();
+    //Three();
+    //await Three();
+    //await Four();
+    //await Five();
+}
     private static async void One()
     {
         Console.WriteLine("A");
@@ -17,8 +17,6 @@
         Task.Delay(5_000);
         Console.WriteLine("C");
     }
-
-
     private static async void Two()
     {
         Console.WriteLine("A");
@@ -36,8 +34,6 @@
         Console.WriteLine("C");
         Console.WriteLine(result);
     }
-
-
     private static async Task Four()
     {
         Console.WriteLine("A");
@@ -47,7 +43,6 @@
         Console.WriteLine("C");
         Console.WriteLine(getSlow.Result);
     }
-
     private static async Task Five()
     {
         Console.WriteLine("A");
@@ -56,7 +51,6 @@
         Console.WriteLine(await SlowGetAsync(10_000));
         Console.WriteLine("C");
     }
-
 
     private static async Task<string> SlowGetAsync(int msToWait)
     {
